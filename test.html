@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <style>
+
+
+        body {
+            font-family: Roboto, sans-serif;
+            font-size: 14pt;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 40%;
+            margin: auto;
+            grid-gap: 2px;
+        }
+
+        .card {
+            font-size: 1.2em;
+            width: auto;
+            background-image: linear-gradient(rgb(116, 149, 216),rgb(99, 132, 199));
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        .maincard {
+            grid-column: span 2;
+            grid-row: span 2;
+            height: auto;
+            min-height: 100px;
+            font-size: 2.5em;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                display: block;
+            }
+
+            .card {
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card maincard">
+            D500 vs.
+        </div>
+        <div class="card">
+            Canon 90D
+        </div>
+        <div class="card">
+            Nikon D7500
+        </div>
+        <div class="card">
+            Pentax K3 III
+        </div>
+        <div class="card">
+            Canon R7
+        </div>
+        <div class="card">
+            Mirrorless
+        </div>
+    </div>
+</body>
+
+</html>
